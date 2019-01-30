@@ -287,6 +287,9 @@ h6 {
     font-size: 1.4rem;
     color: #F93524; }
 
+.detail-wrap {
+  margin-bottom: 7rem; }
+
 main {
   padding-bottom: 150px; }
 
@@ -334,7 +337,6 @@ main {
     border: 2px solid #F93524; }
 
 ul .inner {
-  padding-left: 1em;
   overflow: hidden;
   display: none; }
 
@@ -351,11 +353,27 @@ ul li a.toggle:hover {
   background: rgba(0, 0, 0, 0.9); }
 
 .accordion-item {
+  margin: 10px 0;
   background-color: #252525; }
 
 .toggle {
-  padding: 0;
+  padding: 20px 59px;
   cursor: pointer; }
+
+.inner {
+  padding: 0 59px 20px; }
+
+.feedback-title {
+  margin-bottom: 4rem;
+  font-size: 3.7rem;
+  text-align: center; }
+
+.feedback-input, .feedback-area {
+  margin-bottom: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  width: 100%;
+  background: transparent; }
 
 button {
   border: none;
