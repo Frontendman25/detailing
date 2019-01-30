@@ -8,6 +8,20 @@
   background-position: center top;
 }
 
+#burger-menu {
+  display: none;
+  height: 24px;
+  cursor: pointer;
+}
+
+.bars {
+  background: white;
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin-bottom: 5px;
+}
+
 .header {
   &-nav {
     display: flex;
@@ -15,17 +29,26 @@
     align-items: center;
     margin-bottom: 8rem;
 
-    &-link {
+    &-wrap-link {
+      display: flex;
+      align-items: center;
       flex-grow: 1;
-      font-size: 1.2rem;
-      text-align: center;
-      letter-spacing: 1em;
+      justify-content: space-between;
+    }
+
+    &-link {
 
       &-tel {
         font-size: 1.3rem;
         letter-spacing: .5em;
       }
+
+      &-logo {
+        text-align: left;
+        flex-basis: 300px;
+      }
     }
+
   }
 
   &-desc {

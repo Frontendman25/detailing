@@ -167,6 +167,18 @@ h6 {
   background-repeat: no-repeat;
   background-position: center top; }
 
+#burger-menu {
+  display: none;
+  height: 24px;
+  cursor: pointer; }
+
+.bars {
+  background: white;
+  width: 30px;
+  height: 3px;
+  display: block;
+  margin-bottom: 5px; }
+
 .header-nav {
   display: -ms-flexbox;
   display: flex;
@@ -175,15 +187,22 @@ h6 {
   -ms-flex-align: center;
       align-items: center;
   margin-bottom: 8rem; }
-  .header-nav-link {
+  .header-nav-wrap-link {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
     -ms-flex-positive: 1;
         flex-grow: 1;
-    font-size: 1.2rem;
-    text-align: center;
-    letter-spacing: 1em; }
-    .header-nav-link-tel {
-      font-size: 1.3rem;
-      letter-spacing: .5em; }
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+  .header-nav-link-tel {
+    font-size: 1.3rem;
+    letter-spacing: .5em; }
+  .header-nav-link-logo {
+    text-align: left;
+    -ms-flex-preferred-size: 300px;
+        flex-basis: 300px; }
 
 .header-desc {
   margin-bottom: 17.1rem; }
@@ -272,7 +291,7 @@ main {
   padding-bottom: 150px; }
 
 .detail-item {
-  margin-bottom: 2rem; }
+  margin-bottom: 3rem; }
 
 .detail-title {
   font-size: 3.7rem; }
@@ -314,6 +333,30 @@ main {
   .slick-current img {
     border: 2px solid #F93524; }
 
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none; }
+
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: 0.75em;
+  border-radius: 0.15em;
+  transition: background 0.3s ease; }
+
+ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9); }
+
+.accordion-item {
+  background-color: #252525; }
+
+.toggle {
+  padding: 0;
+  cursor: pointer; }
+
 button {
   border: none;
   max-width: 234px;
@@ -326,3 +369,25 @@ button {
   text-align: center;
   color: #FFFFFF;
   cursor: pointer; }
+
+@media (max-width: 991.98px) {
+  #burger-menu {
+    position: fixed;
+    right: 20px;
+    z-index: 20;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%; }
+  .header-nav-wrap-link {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); }
+  .header-nav-link,
+  .header-nav-link-tel,
+  .header-btn {
+    margin: 10px 0; } }

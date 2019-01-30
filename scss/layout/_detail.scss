@@ -4,7 +4,7 @@ main {
 
 .detail {
   &-item {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   &-title {
@@ -52,4 +52,35 @@ main {
   img {
     border: 2px solid $brand-clr;
   }
+}
+
+
+
+ul .inner {
+  padding-left: 1em;
+  overflow: hidden;
+  display: none;
+}
+
+ul li a.toggle {
+  width: 100%;
+  display: block;
+  background: rgba(0, 0, 0, 0.78);
+  color: #fefefe;
+  padding: 0.75em;
+  border-radius: 0.15em;
+  transition: background 0.3s ease;
+}
+
+ul li a.toggle:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.accordion-item {
+  background-color: #252525;
+}
+
+.toggle {
+  padding: 0;
+  cursor: pointer;
 }

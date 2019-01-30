@@ -21,7 +21,33 @@
 @media (max-width: 767.98px) {}
 
 // Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {}
+@media (max-width: 991.98px) {
+  #burger-menu {
+    position: fixed;
+    right: 20px;
+    z-index: 20;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-nav-wrap-link {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .8);
+  }
+
+  .header-nav-link,
+  .header-nav-link-tel,
+  .header-btn {
+    margin: 10px 0;
+  }
+}
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {}
