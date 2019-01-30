@@ -1,0 +1,55 @@
+main {
+  padding-bottom: 150px;
+}
+
+.detail {
+  &-item {
+    margin-bottom: 2rem;
+  }
+
+  &-title {
+    font-size: 3.7rem;
+  }
+
+  &-add {
+    @include wrap-links-line(flex-start)
+  }
+
+  &-line {
+    @include links-line();
+  }
+
+  &-more {
+    color: $brand-clr;
+
+    &-bold {
+      font-family: 'Montserrat-Bold'
+    }
+  }
+
+  &-slider-wrap-img {
+    outline: none;
+    margin: 0 25px;
+  }
+
+  &-slider {
+    &-img {
+      width: 100%;
+    }
+  }
+}
+
+.slick-track {
+  padding: 30px 0;
+}
+
+.slick-current {
+  position: relative;
+  transform: scale(1.15);
+  //  width: 310px;
+  transition: all .5s;
+
+  img {
+    border: 2px solid $brand-clr;
+  }
+}

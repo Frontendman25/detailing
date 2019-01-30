@@ -1,0 +1,20 @@
+/**
+ * Basic typography style for copy text
+ */
+html,
+body {
+  font-size: 10px;
+  font-family: "Montserrat-Regular", $text-font-stack;
+  line-height: 1.5;
+  color: $txt-main-clr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat-Bold';
+  color: $txt-titles-clr;
+}

@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header-wrap {
+  padding-bottom: 10rem;
+  background-image: url('/img/Large-8629McLaren-Senna----7b.png');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.header {
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+
+    &-link {
+      flex-grow: 1;
+      font-size: 1.2rem;
+      text-align: center;
+      letter-spacing: 1em;
+
+      &-tel {
+        font-size: 1.3rem;
+        letter-spacing: .5em;
+      }
+    }
+  }
+
+  &-desc {
+    margin-bottom: 17.1rem;
+  }
+
+  &-title {
+    margin-bottom: 3rem;
+    font-size: 5rem;
+    line-height: normal;
+  }
+
+  &-text {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    line-height: 2.3;
+  }
+
+  &-about {
+    display: flex;
+    align-items: center;
+
+    &-icons {}
+
+    &-icon {
+      stroke: currentColor;
+      fill: none;
+    }
+  }
+
+  &-benefits {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-benefit {
+    &-title {
+      margin-bottom: .5rem;
+      font-size: 1.9rem;
+    }
+
+    &-text {
+      font-size: 1.1rem;
+    }
+  }
+}

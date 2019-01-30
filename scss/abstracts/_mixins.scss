@@ -1,0 +1,60 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin btn($width: '100%') {
+  flex-grow: 1;
+  padding: 1rem;
+  width: $width;
+  background-color: $brand-clr;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+@mixin wrap-links-line($jf-cnt: center) {
+  display: flex;
+  align-items: center;
+  justify-content: $jf-cnt;
+}
+
+@mixin links-line() {
+  margin-right: 3rem;
+  width: 30%;
+  height: 1px;
+  background-color: $brand-clr;
+}
+
+@mixin on-event($self: false) {
+  @if $self {
+
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+
+  @else {
+
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}

@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+button {
+  border: none;
+  max-width: 234px;
+  min-width: 234px;
+  flex-grow: 1;
+  padding: 1.5rem .5rem;
+  background-color: $brand-clr;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+}
