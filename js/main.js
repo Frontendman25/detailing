@@ -36,11 +36,13 @@ $(function () {
     if ($this.next().hasClass('show')) {
       $this.next().removeClass('show');
       $this.next().slideUp(350);
+      $this.find($('.arrow')).removeClass('rotate');
     } else {
       $this.parent().parent().find('li .inner').removeClass('show');
       $this.parent().parent().find('li .inner').slideUp(350);
       $this.next().toggleClass('show');
       $this.next().slideToggle(350);
+      $this.find($('.arrow')).addClass('rotate');
     }
   });
   // Accordion end
@@ -53,9 +55,11 @@ $(function () {
       'position': 'fixed',
       'display': 'flex',
       'flex-direction': 'column',
+      'justify-content': 'space-between',
       'top': '50%',
       'left': '50%',
       'transform': 'translate(-50% , -50%)',
+      'height': '360px',
       'z-index': '10'
     })
   });

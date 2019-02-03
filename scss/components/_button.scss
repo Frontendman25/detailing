@@ -12,4 +12,10 @@ button {
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
+  transition: .35s;
+
+  &:hover {
+    background-color: $txt-titles-clr;
+    color: $main-bg-clr;
+  }
 }

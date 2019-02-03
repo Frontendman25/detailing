@@ -15,6 +15,10 @@ main {
     font-size: 3.7rem;
   }
 
+  &-text {
+    margin-top: 10px;
+  }
+
   &-add {
     @include wrap-links-line(flex-start)
   }
@@ -39,6 +43,7 @@ main {
   &-slider {
     &-img {
       width: 100%;
+      filter: grayscale(100%);
     }
   }
 }
@@ -55,55 +60,7 @@ main {
 
   img {
     border: 2px solid $brand-clr;
-  }
-}
-
-ul .inner {
-  overflow: hidden;
-  display: none;
-}
-
-ul li a.toggle {
-  width: 100%;
-  display: block;
-  background: rgba(0, 0, 0, 0.78);
-  color: #fefefe;
-  padding: 0.75em;
-  border-radius: 0.15em;
-  transition: background 0.3s ease;
-}
-
-ul li a.toggle:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-.accordion-item {
-  margin: 10px 0;
-  background-color: #252525;
-}
-
-.toggle {
-  padding: 20px 59px;
-  cursor: pointer;
-}
-
-.inner {
-  padding: 0 59px 20px;
-}
-
-.feedback {
-  &-title {
-    margin-bottom: 4rem;
-    font-size: 3.7rem;
-    text-align: center;
-  }
-
-  &-input,
-  &-area {
-    margin-bottom: 10px;
-    border: 1px solid white;
-    padding: 10px;
-    width: 100%;
-    background: transparent;
+    filter: grayscale(0);
+    transition: .35s;
   }
 }
