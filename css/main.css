@@ -407,6 +407,8 @@ ul li a.toggle:hover {
 
 .arrow {
   float: right;
+  -ms-transform: rotate(0deg);
+      transform: rotate(0deg);
   transition: transform .35s; }
 
 .rotate {
@@ -441,8 +443,7 @@ button {
     -ms-flex-align: end;
     align-items: flex-end;
     -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%; }
+    flex-direction: column; }
   .header-nav-wrap-link {
     position: absolute;
     display: none;

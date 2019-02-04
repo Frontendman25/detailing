@@ -2,7 +2,7 @@ $(function () {
   // Slick slider
   $('.detail-slider').slick({
     centerMode: true,
-    centerPadding: '60px',
+    centerPadding: '100px',
     slidesToShow: 3,
     arrows: false,
     responsive: [
@@ -10,12 +10,12 @@ $(function () {
         breakpoint: 768,
         settings: {
           centerMode: true,
-          centerPadding: '40px',
-          slidesToShow: 2
+          centerPadding: '0px',
+          slidesToShow: 3
         }
     },
       {
-        breakpoint: 480,
+        breakpoint: 500,
         settings: {
           centerMode: true,
           centerPadding: '40px',
@@ -29,20 +29,23 @@ $(function () {
 
   // Accordion
   $('.toggle').click(function (e) {
-    //    e.preventDefault();
+    e.preventDefault();
 
     let $this = $(this);
+    let $parent2 = $this.parent().parent()
+    let $parent2Arrow = $parent2.find('.arrow')
 
     if ($this.next().hasClass('show')) {
-      $this.next().removeClass('show');
-      $this.next().slideUp(350);
-      $this.find($('.arrow')).removeClass('rotate');
+      $this.next().removeClass('show')
+      $this.next().stop().slideUp(350)
+      $this.find('.arrow').removeClass('rotate')
     } else {
-      $this.parent().parent().find('li .inner').removeClass('show');
-      $this.parent().parent().find('li .inner').slideUp(350);
-      $this.next().toggleClass('show');
-      $this.next().slideToggle(350);
-      $this.find($('.arrow')).addClass('rotate');
+      $parent2.find('li .inner').removeClass('show')
+      $parent2.find('li .inner').stop().slideUp(350)
+      $this.next().toggleClass('show')
+      $this.next().slideToggle(350)
+      $parent2.find($('.arrow')).removeClass('rotate')
+      $this.find($('.arrow')).toggleClass('rotate');
     }
   });
   // Accordion end

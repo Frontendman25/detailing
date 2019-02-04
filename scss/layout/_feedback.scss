@@ -75,6 +75,7 @@ ul li a.toggle:hover {
 
 .arrow {
   float: right;
+  transform: rotate(0deg);
   transition: transform .35s;
 }
 
