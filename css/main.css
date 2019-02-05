@@ -226,6 +226,8 @@ h6 {
   display: flex;
   -ms-flex-align: center;
       align-items: center; }
+  .header-about-icons {
+    margin-bottom: 15px; }
   .header-about-icon {
     stroke: currentColor;
     fill: none; }
@@ -415,6 +417,13 @@ ul li a.toggle:hover {
   -ms-transform: rotate(90deg);
       transform: rotate(90deg);
   transition: .35s; }
+
+/* Set the size of the div element that contains the map */
+#map {
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */ }
 
 button {
   border: none;
