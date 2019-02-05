@@ -301,7 +301,7 @@ h6 {
   margin-bottom: 7rem; }
 
 main {
-  padding-bottom: 150px; }
+  padding-bottom: 15px; }
 
 .detail-item {
   margin-bottom: 3rem; }
@@ -358,7 +358,8 @@ main {
   text-align: center; }
 
 .feedback-form-wrap {
-  margin-top: 11px; }
+  margin-top: 11px;
+  margin-bottom: 10rem; }
 
 .feedback-input, .feedback-area {
   margin-bottom: 10px;
@@ -420,10 +421,24 @@ ul li a.toggle:hover {
 
 /* Set the size of the div element that contains the map */
 #map {
-  height: 400px;
+  height: 350px;
   /* The height is 400 pixels */
   width: 100%;
   /* The width is the width of the web page */ }
+
+.map {
+  margin-bottom: 2rem; }
+
+.address-title {
+  margin-bottom: 1.5rem;
+  font-size: 3.7rem; }
+
+.address-item {
+  margin-bottom: 1rem; }
+
+.address-caption {
+  margin-bottom: .4rem;
+  font-size: 1.5rem; }
 
 button {
   border: none;
