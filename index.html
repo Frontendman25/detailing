@@ -11,10 +11,32 @@
   <link rel="stylesheet" href="js/slick/slick.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <title>Hello, world!</title>
+  <title>Детейлинг</title>
 </head>
 
 <body>
+  <!-- Modal -->
+  <div class="modal fade" id="leaveRequest" tabindex="-1" role="dialog" aria-labelledby="leaveRequestLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="leaveRequestLabel">Оставить заявку</h5>
+          <button type="button" class="close text-right" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+
   <header class="header-wrap">
     <div class="header container">
       <nav class="header-nav ">
@@ -30,7 +52,7 @@
           <a class="header-nav-link" href="#">УСЛУГИ</a>
           <a class="header-nav-link" href="#">О НАС</a>
           <a class="header-nav-link header-nav-link-tel" href="#">093 781 00 55</a>
-          <button class="header-btn">Оставить заявку</button>
+          <button class="header-btn" type="button" data-toggle="modal" data-target="#leaveRequest">Оставить заявку</button>
         </div>
       </nav>
 
@@ -40,16 +62,16 @@
           повреждений салона повреждений салона
           повреждений салона обработки</p>
         <div class="header-wrap-btn col-12">
-          <button class="header-btn">Оставить заявку</button>
+          <button class="header-btn" type="button" data-toggle="modal" data-target="#leaveRequest">Оставить заявку</button>
         </div>
       </section>
 
       <section class="header-about row">
         <div class="header-about-icons col-sm-3 col-md-5">
-          <svg width="17" height="29" viewBox="0 0 17 29" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header-about-svg" width="17" height="29" viewBox="0 0 17 29" xmlns="http://www.w3.org/2000/svg">
             <path class="header-about-icon" d="M14.7731 1.00551L11.3403 1C7.48366 1 4.99132 3.55706 4.99132 7.51478V10.5185H1.53978C1.24152 10.5185 1 10.7603 1 11.0586V15.4107C1 15.7089 1.2418 15.9504 1.53978 15.9504H4.99132V26.9321C4.99132 27.2304 5.23284 27.4719 5.5311 27.4719H10.0344C10.3326 27.4719 10.5742 27.2301 10.5742 26.9321V15.9504H14.6098C14.9081 15.9504 15.1496 15.7089 15.1496 15.4107L15.1512 11.0586C15.1512 10.9154 15.0942 10.7782 14.9932 10.6769C14.8921 10.5755 14.7544 10.5185 14.6112 10.5185H10.5742V7.97221C10.5742 6.74835 10.8658 6.12705 12.4601 6.12705L14.7726 6.12623C15.0706 6.12623 15.3121 5.88443 15.3121 5.58645V1.54528C15.3121 1.24758 15.0708 1.00606 14.7731 1.00551Z" stroke="#BBBABA" stroke-width="2" />
           </svg>
-          <svg width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
+          <svg class="header-about-svg" width="29" height="29" viewBox="0 0 29 29" xmlns="http://www.w3.org/2000/svg">
             <path class="header-about-icon" d="M7.20338 1.32959C3.76673 1.32959 1 4.09633 1 7.53297V21.4906C1 24.9272 3.76673 27.6939 7.20338 27.6939H21.161C24.5976 27.6939 27.3643 24.9272 27.3643 21.4906V7.53297C27.3643 4.09633 24.5976 1.32959 21.161 1.32959H7.20338Z" stroke="#BBBABA" stroke-width="2" />
           </svg>
         </div>
@@ -181,30 +203,30 @@
             <div class="feedback-accordion col-sm-6">
               <ul class="accordion">
                 <li class="accordion-item">
-                  <h3 class="toggle" href="#">Вопрос 1 <span class="arrow">&#10095;</span></h3>
+                  <h3 class="toggle" href="#">Детейлинг что это?<span class="arrow">&#10095;</span></h3>
                   <p class="inner">
-                    Ответ на вопрос 1 эксперты Украины в сфере авто дизайна, внешнего вида автомобиля. Предост
-                    комплоклеиваем пленкой, наносим тонировку и детейлинг.
-                    Украины в сфере авто дизайна, ухо
-                    восстановления автомобиля. Предоставим весь комплекс услуг: создаем пленкой.
+                    Detailing – детализирующий, подробный. Встает вопрос — причем здесь автомобили? Ответ на самом деле очень простой! Понятия «автомобиль» и «детейлинг» тесно связаны между собой и в совокупности представляют комплекс услуг по качественному уходу за машиной, я бы даже сказал, детальному.
                   </p>
                 </li>
                 <li class="accordion-item">
-                  <h3 class="toggle" href="#">Item 2 <span class="arrow">&#10095;</span></h3>
+                  <h3 class="toggle" href="#">Когда появился?<span class="arrow">&#10095;</span></h3>
                   <p class="inner">
-                    Let's make h3 nice big leafy tree. You have to make those lih3tle noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    Впервые детейлинг появился в Южной Калифорнии (США), затем эту практику переняли в других странах[4]. На сегодняшний день в США насчитывается более 50 тысяч детейлеров.
                   </p>
                 </li>
                 <li class="accordion-item">
-                  <h3 class="toggle" href="#">Item 3 <span class="arrow">&#10095;</span></h3>
+                  <h3 class="toggle" href="#">Виды детейлинга?<span class="arrow">&#10095;</span></h3>
                   <p class="inner">
-                    Let's make h3 nice big leafy tree. You have to make those lih3tle noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    Чистка двигателя (максимально безопасное удаление смазочных материалов при помощи специальных средств, в частности диэлектрических и гидрофобных химических составов).
+                    Внутренний (чистка всех поверхностей салона — кожи, винила, пластика, ткани, хромированных деталей специальными составами), озонация салона.
+                    Внешний (очистка ЛКП глиной или авто-скрабом, полировка кузова, чистка дисков, обработка воском, устранение внешних дефектов).
                   </p>
                 </li>
                 <li class="accordion-item">
-                  <h3 class="toggle" href="#">Item 4 <span class="arrow">&#10095;</span></h3>
+                  <h3 class="toggle" href="#">Детейлинг сегодня?
+                    <span class="arrow">&#10095;</span></h3>
                   <p class="inner">
-                    Let's make h3 nice big leafy tree. You have to make those libuttontle noises or it won't work. Let's put some happy little clouds in our world. We don't really know where this goes - and I'm not sure we really care. When you do it your way you can go anywhere you choose. No worries. No cares. Just float and wait for the wind to blow you around.
+                    Детейлинг сегодня – услуга, граничащая с искусством, распространенная в очень многих странах и городах. У каждой страны есть специфика детейлинга, свои привычные материалы и подходы, своя философия и история. Индустрия товаров для детейлинга развивается стремительно – производители покрытий с каждым годом улучшают свои технологии. Товары, которые ранее можно было купить только под заказ, сегодня продаются свободно и всегда есть в наличии.
                   </p>
                 </li>
               </ul>
@@ -222,7 +244,7 @@
                   <textarea name="" id="" cols="30" rows="10" class="feedback-area" placeholder="Вош вопрос"></textarea>
                 </div>
                 <div class="feedback-btn-wrap">
-                  <button class="feedback-btn">Отправить вопрос</button>
+                  <button class="feedback-btn" type="button" data-toggle="modal" data-target="#leaveRequest">Отправить вопрос</button>
                 </div>
               </form>
             </div>
