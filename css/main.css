@@ -464,8 +464,117 @@ button {
     background-color: #F1F1F1;
     color: #000; }
 
-.modal-title {
-  color: black !important; }
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.modal-content {
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 90%;
+  padding: 15px 6.5rem;
+  position: fixed;
+  box-sizing: border-box;
+  max-width: 470px;
+  max-height: auto;
+  margin: auto;
+  border: 0px solid #fcfcfc;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  z-index: 100; }
+
+.modal-close {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  line-height: .4;
+  font-size: 40px;
+  font-weight: 200;
+  color: #F1F1F1;
+  transition: all .2s;
+  cursor: pointer;
+  width: auto;
+  transition: all .35s; }
+
+.modal-close:hover {
+  color: #3b3b3b; }
+
+@media (max-width: 575.98px) {
+  .modal-content {
+    padding: 10px 3.5rem;
+    width: 87%; } }
+
+.modal-input-wrap {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-bottom: 2.3rem; }
+
+.modal-name {
+  font-size: 1.1rem;
+  color: #000; }
+
+.modal-input {
+  padding: 5px 10px;
+  width: 100%; }
+
+.modal-caption {
+  margin-bottom: 2rem; }
+
+.modal-caption,
+.modal-btn {
+  font-family: 'PT_Sans-Bold'; }
+
+.modal-btn {
+  border: none;
+  font-family: inherit;
+  color: #F1F1F1;
+  cursor: pointer; }
+  .modal-btn:hover {
+    background-color: #000;
+    color: #F1F1F1; }
+
+label.error {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  color: rgba(255, 0, 0, 0.8); }
+
+.submit-success {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  display: none;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 3rem;
+  color: green; }
+
+.invalid {
+  border: 1px solid red;
+  box-shadow: inset 0px 0px 10px 5px rgba(255, 0, 0, 0.2); }
+
+.valid {
+  border: 1px solid green;
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 128, 0, 0.2); }
 
 @media (max-width: 991.98px) {
   #burger-menu {

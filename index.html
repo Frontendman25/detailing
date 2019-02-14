@@ -16,6 +16,36 @@
 
 <body>
   <!-- Modal -->
+  <div id="popup-modal" class="modal">
+    <div class="modal-content">
+      <a class="modal-close">×</a>
+      <h2 class="modal-caption text-center">ОБРАТНАЯ СВЯЗЬ</h2>
+      <form action="#" class="form-modal" novalidate="novalidate">
+        <div class="modal-input-wrap" style="margin-bottom: 1.3rem;">
+          <label class="modal-name" for="name">Ваше имя *</label>
+          <input class="modal-input" id="name" name="name" type="text" required="" aria-invalid="true"><label id="name-error" class="error" for="name">Поле обязательно для заполнения</label>
+        </div>
+        <div class="modal-input-wrap" style="margin-bottom: 1.3rem;">
+          <label class="modal-name" for="phone">Телефон *</label>
+          <input class="modal-input" id="phone" name="phone" type="tel" required=""><label id="phone-error" class="error" for="phone">Поле обязательно для заполнения</label>
+        </div>
+        <div class="modal-input-wrap" style="margin-bottom: 1.3rem;">
+          <label class="modal-name" for="email">Email *</label>
+          <input class="modal-input" id="email" name="email" type="email" required=""><label id="email-error" class="error" for="email">Поле обязательно для заполнения</label>
+        </div>
+        <div class="modal-input-wrap">
+          <label class="modal-name" for="message">Сообщение</label>
+          <textarea class="modal-input" name="message" id="message" rows="5"></textarea>
+        </div>
+        <div class="modal-btn-wrap text-center">
+          <button class="modal-btn">ОТПРАВИТЬ</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!--
   <div class="modal fade" id="leaveRequest" tabindex="-1" role="dialog" aria-labelledby="leaveRequestLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -35,6 +65,7 @@
       </div>
     </div>
   </div>
+-->
   <!-- Modal -->
 
   <header class="header-wrap">
@@ -287,11 +318,15 @@
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <!--  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+
   <!--  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!--  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>-->
   <script src="js/slick/slick.min.js"></script>
+  <script src="js/validate/dist/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

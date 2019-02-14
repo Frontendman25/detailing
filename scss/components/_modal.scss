@@ -1,5 +1,134 @@
+//.modal {
+//  &-title {
+//    color: black !important;
+//  }
+//}
+
 .modal {
-  &-title {
-    color: black !important;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 90%;
+  padding: 15px 6.5rem;
+  position: fixed;
+  box-sizing: border-box;
+  max-width: 470px;
+  max-height: auto;
+  margin: auto;
+  border: 0px solid #fcfcfc;
+  font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+  z-index: 100;
+}
+
+.modal-close {
+  position: absolute;
+  bottom: 100%;
+  left: 100%;
+  line-height: .4;
+  font-size: 40px;
+  font-weight: 200;
+  color: $txt-titles-clr;
+  transition: all .2s;
+  cursor: pointer;
+  width: auto;
+  transition: all .35s;
+}
+
+.modal-close:hover {
+  color: #3b3b3b;
+}
+
+@media (max-width: 575.98px) {
+  .modal-content {
+    padding: 10px 3.5rem;
+    width: 87%;
   }
+}
+
+.modal-input-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2.3rem;
+}
+
+.modal-name {
+  font-size: 1.1rem;
+  color: $main-bg-clr;
+}
+
+.modal-input {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.modal-caption {
+  margin-bottom: 2rem;
+}
+
+.modal-caption,
+.modal-btn {
+  font-family: 'PT_Sans-Bold'
+}
+
+.modal-btn {
+  border: none;
+  font-family: inherit;
+  color: $txt-titles-clr;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $main-bg-clr;
+    color: $txt-titles-clr;
+  }
+}
+
+label.error {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 21px;
+  color: rgba(255, 0, 0, .8);
+}
+
+.submit-success {
+  position: fixed;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  padding: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 3rem;
+  color: green;
+}
+
+.invalid {
+  border: 1px solid red;
+  -webkit-box-shadow: inset 0px 0px 10px 5px rgba(255, 0, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 10px 5px rgba(255, 0, 0, 0.2);
+  box-shadow: inset 0px 0px 10px 5px rgba(255, 0, 0, 0.2);
+}
+
+.valid {
+  border: 1px solid green;
+  -webkit-box-shadow: inset 0px 0px 10px 5px rgba(0, 128, 0, 0.2);
+  -moz-box-shadow: inset 0px 0px 10px 5px rgba(0, 128, 0, 0.2);
+  box-shadow: inset 0px 0px 10px 5px rgba(0, 128, 0, 0.2);
 }
