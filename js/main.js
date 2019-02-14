@@ -126,20 +126,20 @@ $.validator.setDefaults({
   highlight: function (element) {
     if ($(element).hasClass('valid')) {
       $(element).removeClass('valid')
+    } else if ($(element).val() === '' || $(element).hasClass('invalid')) {
+      $(element).parent().css('margin-bottom', '2.3rem')
+    } else {
+      $(element).parent().css('margin-bottom', '1.3rem')
     }
+
     $(element).addClass('invalid')
     $(element).on('focus', function (e) {
       $(element).next().css({
         top: '47px',
         left: '10px'
       })
-      $(element).parent().css('margin-bottom', '2.3rem')
+      //      $(element).parent().css('margin-bottom', '2.3rem')
     })
-    if ($(element).val() === '') {
-      $(element).parent().css('margin-bottom', '1.3rem')
-    } else {
-      $(element).parent().css('margin-bottom', '2.3rem')
-    }
     console.log($(element).text())
   },
   unhighlight: function (element) {
@@ -147,6 +147,7 @@ $.validator.setDefaults({
       $(element).removeClass('invalid')
     }
     $(element).addClass('valid')
+    $(element).parent().css('margin-bottom', '1.3rem')
   }
 })
 
